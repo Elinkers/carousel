@@ -1,0 +1,65 @@
+.big{
+    overflow: hidden;
+    position: relative;
+}
+
+.mid{
+    position: absolute;
+    transition: 1s;
+}
+
+.pic{
+    float: left;
+    background-color: violet;
+}
+
+.img{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.spot_block{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 auto;
+    position: absolute;
+    width: 200px;
+}
+
+.spot{
+    cursor: pointer;
+    width: 30px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:#fff;
+}
+
+.shift_block{
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.left::before{
+    cursor: pointer;
+    content:"<";
+    position:absolute;
+    color:#fff;
+    left:0px;
+    font-size:30px;    
+}
+
+.right::before{
+    cursor: pointer;
+    content:">";
+    position:absolute;
+    color:#fff;
+    right:0px;
+    font-size:30px;    
+}
